@@ -447,64 +447,83 @@
     </footer>
     <div class="modal-overlay is-open">
       <div class="modal">
-        <form>
-          <div class="form-close-container">
-            <svg class="form-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#close-black"></use>
-            </svg>
+        <button type="button" class="close-button">
+          <svg class="form-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+          <div class="label-container">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="form-input-container">
+              <input
+                class="form-input"
+                type="text"
+                name="username"
+                id="user-name"
+                autofocus
+              />
+              <svg class="form-icons" width="18" height="24">
+                <use href="./images/icons.svg#person-black"></use>
+              </svg>
+            </div>
           </div>
-          <fieldset class="form-fieldset">
-            <legend class="group-title">
-              Leave your contacts and we will call you back
-            </legend>
-            <label class="form-label"
-              >Name
-              <div class="form-icons-container">
-                <input type="text" name="username" autofocus />
-                <svg class="form-icons" width="18" height="18">
-                  <use href="./images/icons.svg#person-black"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="form-label"
-              >Phone
-              <div class="form-icons-container">
-                <input type="tel" name="phone" />
-                <svg class="form-icons" width="18" height="24">
-                  <use href="./images/icons.svg#phone-black"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="form-label"
-              >Email
-              <div class="form-icons-container">
-                <input type="email" name="email" />
-                <svg class="form-icons" width="18" height="24">
-                  <use href="./images/icons.svg#email-black"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="form-label"
-              >Comment
-              <textarea
-                name="comment"
-                rows="5"
-                placeholder="Text input"
-              ></textarea>
-            </label>
-          </fieldset>
+
+          <div class="label-container">
+            <label class="form-label" for="user-tel">Phone</label>
+            <div class="form-input-container">
+              <input class="form-input" type="tel" name="phone" id="user-tel" />
+              <svg class="form-icons" width="18" height="24">
+                <use href="./images/icons.svg#phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="label-container">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="form-input-container">
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="user-email"
+              />
+              <svg class="form-icons" width="18" height="24">
+                <use href="./images/icons.svg#email-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="label-container textarea-container">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea
+              class="textarea-box"
+              name="comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
           <div class="terms-container">
             <input
               type="checkbox"
               name="terms"
-              value="terms"
+              value="agree"
               id="terms"
-              class="terms-input"
+              class="visually-hidden"
             />
-            <label class="agree-label" for="terms"
-              >I accept the terms and conditions of the
-              <a href="" class="privacy-policy-link">Privacy Policy</a></label
-            >
+            <label class="agree-label" for="terms">
+              <span class="agree-container" width="16" height="16">
+                <svg class="agree-icon" width="10" height="8">
+                  <use href="./images/icons.svg#agree-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="send-btn">Send</button>
         </form>
