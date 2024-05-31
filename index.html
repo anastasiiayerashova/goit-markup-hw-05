@@ -430,10 +430,14 @@
           </ul>
         </div>
         <div class="footer-subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-email-label"
-              >Subscribe
-              <input type="email" name="email" placeholder="E-mail" />
+            <label class="footer-email-label">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="subscribe-input"
+              />
             </label>
             <button type="submit" class="footer-subscribe-btn">
               Subscribe
@@ -461,7 +465,7 @@
               <input
                 class="form-input"
                 type="text"
-                name="username"
+                name="user-name"
                 id="user-name"
                 autofocus
               />
@@ -500,7 +504,7 @@
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="textarea-box"
-              name="comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
@@ -509,12 +513,12 @@
           <div class="terms-container">
             <input
               type="checkbox"
-              name="terms"
-              value="agree"
-              id="terms"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
               class="visually-hidden"
             />
-            <label class="agree-label" for="terms">
+            <label class="agree-label" for="user-privacy">
               <span class="agree-container">
                 <svg class="agree-icon" width="10" height="8">
                   <use href="./images/icons.svg#agree-icon"></use>
