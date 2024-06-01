@@ -589,16 +589,16 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-font-family: "Roboto", sans-serif;
+
+  font-family: "Roboto", sans-serif;
   border-radius: 4px;
-  
+
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  
+
   color: #ffffff;
   border: none;
   min-width: 165px;
@@ -607,7 +607,7 @@ font-family: "Roboto", sans-serif;
 }
 
 ::placeholder {
-  color #ffffff;
+  color: #ffffff;
 }
 
 .footer-subscribe-frame {
@@ -671,19 +671,20 @@ font-family: "Roboto", sans-serif;
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button .form-close-icon {
-  fill: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+.form-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .close-button:hover .form-close-icon,
 .close-button:focus .form-close-icon {
-  background-color: #404bbf;
-  border: none;
   fill: #ffffff;
 }
-
-
 
 .form-title {
   font-weight: 500;
